@@ -2,7 +2,7 @@
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Twitter } from 'lucide-react';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center pt-16 bg-gradient-to-b from-white to-gray-100" id="about">
       <div className="container-custom mx-auto">

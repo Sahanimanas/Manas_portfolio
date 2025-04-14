@@ -7,7 +7,7 @@ import Skills from '@/components/Skills';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
-const Index: React.FC = () => {
+const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />

@@ -3,16 +3,7 @@ import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
-export interface ProjectCardProps {
-  title: string;
-  description: string;
-  image: string;
-  liveUrl?: string;
-  githubUrl?: string;
-  technologies: string[];
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard = ({
   title,
   description,
   image,
