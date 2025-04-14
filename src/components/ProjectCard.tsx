@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ExternalLink, GitHub } from 'lucide-react';
+import { ExternalLink, github } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 export interface ProjectCardProps {
@@ -44,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="flex items-center text-sm font-medium text-portfolio-blue hover:text-portfolio-purple transition-colors"
             >
-              <GitHub size={16} className="mr-1" />
+              <github size={16} className="mr-1" />
               Source Code
             </a>
           )}

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ChevronDown, GitHub, Linkedin, Twitter } from 'lucide-react';
+import { ChevronDown, github, Linkedin, Twitter } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -26,7 +25,7 @@ const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="p-2 bg-portfolio-blue text-white rounded-full hover:bg-portfolio-purple transition-colors"
               >
-                <GitHub size={20} />
+                <github size={20} />
               </a>
               <a 
                 href="https://linkedin.com/in/yourusername" 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronUp, GitHub, Linkedin, Mail, Twitter } from 'lucide-react';
 
