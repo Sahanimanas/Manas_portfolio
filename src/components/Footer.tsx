@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ChevronUp, GitHub, Linkedin, Mail, Twitter } from 'lucide-react';
+import { ChevronUp, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="hover:text-portfolio-lightpurple transition-colors"
             >
-              <GitHub size={24} />
+              <Github size={24} />
             </a>
             <a 
               href="https://linkedin.com/in/yourusername" 
