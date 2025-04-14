@@ -2,15 +2,8 @@
 import React from 'react';
 import { Code, Database, Globe, Layers, LineChart, Smartphone } from 'lucide-react';
 
-interface SkillCategory {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-  skills: string[];
-}
-
-const Skills: React.FC = () => {
-  const skillCategories: SkillCategory[] = [
+const Skills = () => {
+  const skillCategories = [
     {
       title: "Frontend Development",
       description: "Creating responsive and interactive user interfaces",
