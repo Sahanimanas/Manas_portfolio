@@ -39,14 +39,14 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gray-50" id="projects">
+    <section className=" bg-[url(../../public/bg2.jpg)] bg-cover" id="projects">
       <div className="container-custom mx-auto">
-        <h2 className="section-title text-center">My Projects</h2>
+        <h2 className="section-title text-center text-white border  rounded-full border-t-0 border-l-0     p-2">Projects</h2>
         <p className="text-center text-portfolio-gray max-w-2xl mx-auto mb-12">
           Here are some of my recent projects. Each one presented unique challenges and opportunities to learn and grow.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 ">
           {projects.map((project, index) => (
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <ProjectCard {...project} />

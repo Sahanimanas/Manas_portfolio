@@ -5,7 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
-
+import {Link} from 'react-router-dom'
+import { ChevronDown} from 'lucide-react';
 const Contact: React.FC = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -42,9 +43,9 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="bg-gray-50" id="contact">
+    <section className="bg-[url(../../public/bg2.jpg)] bg-cover" id="contact">
       <div className="container-custom mx-auto">
-        <h2 className="section-title text-center">Get In Touch</h2>
+        <h2 className="section-title text-center text-white">CONTACT ME !</h2>
         <p className="text-center text-portfolio-gray max-w-2xl mx-auto mb-12">
           Have a project in mind or just want to say hello? Feel free to reach out!
         </p>
@@ -52,16 +53,16 @@ const Contact: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             <div className="md:col-span-2">
-              <div className="bg-white p-6 rounded-lg border shadow-sm">
-                <h3 className="text-xl font-bold text-portfolio-blue mb-4">Contact Information</h3>
+              <div className="bg-black p-6 rounded-lg border shadow-sm">
+                <h3 className="text-xl font-bold text-white mb-4">Contact Information</h3>
                 
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <Mail size={20} className="mr-3 text-portfolio-purple mt-1" />
                     <div>
-                      <p className="font-medium text-portfolio-blue">Email</p>
-                      <a href="mailto:yourname@example.com" className="text-portfolio-gray hover:text-portfolio-purple transition-colors">
-                        yourname@example.com
+                      <p className="font-medium text-white">Email</p>
+                      <a href="mailto:manashvisahani@gmail.com" className="text-portfolio-gray hover:text-portfolio-purple transition-colors">
+                        manashvisahani@gmail.com
                       </a>
                     </div>
                   </div>
@@ -69,9 +70,9 @@ const Contact: React.FC = () => {
                   <div className="flex items-start">
                     <User size={20} className="mr-3 text-portfolio-purple mt-1" />
                     <div>
-                      <p className="font-medium text-portfolio-blue">LinkedIn</p>
-                      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-portfolio-gray hover:text-portfolio-purple transition-colors">
-                        linkedin.com/in/yourusername
+                      <p className="font-medium text-white">LinkedIn</p>
+                      <a href="https://linkedin.com/in/manashvisahani" target="_blank" rel="noopener noreferrer" className="text-portfolio-gray hover:text-portfolio-purple transition-colors">
+                        linkedin.com/in/manashvisahani
                       </a>
                     </div>
                   </div>
@@ -79,7 +80,7 @@ const Contact: React.FC = () => {
                   <div className="flex items-start">
                     <MessageSquare size={20} className="mr-3 text-portfolio-purple mt-1" />
                     <div>
-                      <p className="font-medium text-portfolio-blue">Response Time</p>
+                      <p className="font-medium text-white">Response Time</p>
                       <span className="text-portfolio-gray">
                         Usually within 24-48 hours
                       </span>
@@ -89,11 +90,11 @@ const Contact: React.FC = () => {
               </div>
             </div>
             
-            <div className="md:col-span-3">
-              <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg border shadow-sm">
+            <div className="md:col-span-3 ">
+              <form onSubmit={handleSubmit} className="bg-black p-6 rounded-lg border shadow-sm">
                 <div className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-portfolio-blue mb-1">
+                    <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
                       Name
                     </label>
                     <Input
@@ -108,7 +109,7 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-portfolio-blue mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
                       Email
                     </label>
                     <Input
@@ -124,7 +125,7 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-portfolio-blue mb-1">
+                    <label htmlFor="message" className="block text-sm font-medium text-white mb-1">
                       Message
                     </label>
                     <Textarea
@@ -135,7 +136,7 @@ const Contact: React.FC = () => {
                       required
                       placeholder="Your message"
                       rows={5}
-                      className="w-full"
+                      className="w-full "
                     />
                   </div>
                   
@@ -147,14 +148,20 @@ const Contact: React.FC = () => {
                     {isSubmitting ? (
                       <>Processing...</>
                     ) : (
-                      <>
-                        <Send size={16} className="mr-2" /> Send Message
+                      < >
+                        <Send size={16} className="mr-2 " /> Send Message
                       </>
                     )}
                   </Button>
+                  
                 </div>
               </form>
             </div>
+            <div className='flex mx-auto text-center justify-center  '>
+                    <Link to={'/Visitpage'} className="animate-bounce p-2 border rounded-full ">
+                              <ChevronDown size={36} className="text-portfolio-purple " />
+                            </Link>
+                  </div>
           </div>
         </div>
       </div>

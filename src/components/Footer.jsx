@@ -3,7 +3,7 @@ import { ChevronUp, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-portfolio-blue text-white py-12">
+    <footer className="bg-[url(../../public/bg2.jpg)] bg-cover text-white py-12">
       <div className="container-custom mx-auto">
         <div className="flex flex-col items-center">
           <a href="#" className="mb-6 inline-block bg-white bg-opacity-10 p-3 rounded-full hover:bg-opacity-20 transition-all">
@@ -47,15 +47,15 @@ const Footer = () => {
             </a>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <a href="#about" className="hover:text-portfolio-lightpurple transition-colors">About</a>
+          {/* <div className="flex flex-wrap justify-center gap-6 mb-8">
+            <a href="#about" className="hover:text-portfolio-lightpurple ">About</a>
             <a href="#projects" className="hover:text-portfolio-lightpurple transition-colors">Projects</a>
             <a href="#skills" className="hover:text-portfolio-lightpurple transition-colors">Skills</a>
             <a href="#contact" className="hover:text-portfolio-lightpurple transition-colors">Contact</a>
-          </div>
+          </div> */}
           
           <div className="text-sm text-gray-300">
-            <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Manashvi Sahani. All rights reserved.</p>
           </div>
         </div>
       </div>
