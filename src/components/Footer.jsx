@@ -3,10 +3,10 @@ import { ChevronUp, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[url(../../public/bg2.jpg)] bg-cover text-white py-12">
+    <footer className="bg-gradient-to-br from-gray-700 to-slate-800 text-white py-12">
       <div className="container-custom mx-auto">
         <div className="flex flex-col items-center">
-          <a href="#" className="mb-6 inline-block bg-white bg-opacity-10 p-3 rounded-full hover:bg-opacity-20 transition-all">
+          <a href="#" className="mb-6 inline-block bg-white bg-opacity-10 p-3 rounded-full hover:bg-opacity-20 transition-all animate-bounce p-2">
             <ChevronUp size={24} />
           </a>
           
@@ -38,7 +38,7 @@ const Footer = () => {
               <Twitter size={24} />
             </a>
             <a 
-              href="mailto:yourname@example.com" 
+              href="mailto:manashisahani@gmail.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-portfolio-lightpurple transition-colors"

@@ -8,42 +8,42 @@ const Skills = () => {
       title: "Frontend Development",
       description: "Creating responsive and interactive user interfaces",
       icon: <Globe className="h-10 w-10 text-portfolio-purple" />,
-      skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "React", "Vue.js", "Next.js", "Tailwind CSS", "SASS"]
+      skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "React", "Tailwind CSS", "SASS"]
     },
     {
       title: "Backend Development",
       description: "Building robust server-side applications and APIs",
       icon: <Code className="h-10 w-10 text-portfolio-purple" />,
-      skills: ["Node.js", "Express", "NestJS", "Django", "Ruby on Rails", "PHP", "GraphQL", "REST APIs"]
+      skills: ["Node.js", "Express", "REST APIs"]
     },
     {
       title: "Database",
       description: "Designing and querying databases",
       icon: <Database className="h-10 w-10 text-portfolio-purple" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis", "Prisma", "Mongoose"]
+      skills: ["MongoDB", "MySQL", "Firebase","Mongoose"]
     },
     {
       title: "DevOps & Tools",
       description: "Deployment, version control, and development tools",
       icon: <Layers className="h-10 w-10 text-portfolio-purple" />,
-      skills: ["Git", "GitHub", "Docker", "CI/CD", "AWS", "Vercel", "Netlify", "Webpack", "Vite"]
+      skills: ["Git", "GitHub", "Netlify", "Webpack", "Vite"]
     },
-    {
-      title: "Mobile Development",
-      description: "Creating cross-platform mobile applications",
-      icon: <Smartphone className="h-10 w-10 text-portfolio-purple" />,
-      skills: ["React Native", "Flutter", "Ionic", "Swift", "Kotlin"]
-    },
+    // {
+    //   title: "Mobile Development",
+    //   description: "Creating cross-platform mobile applications",
+    //   icon: <Smartphone className="h-10 w-10 text-portfolio-purple" />,
+    //   skills: ["React Native", "Flutter", "Ionic", "Swift", "Kotlin"]
+    // },
     {
       title: "Data & Analytics",
       description: "Working with data visualization and analysis",
       icon: <LineChart className="h-10 w-10 text-portfolio-purple" />,
-      skills: ["D3.js", "Chart.js", "Google Analytics", "Data Visualization", "Python (Pandas, NumPy)"]
+      skills: ["Power-BI"]
     }
   ];
 
   return (
-    <section className=" mx-auto bg-[url(../../public/bg2.jpg)] bg-cover text-white" id="skills">
+    <section className=" mx-auto bg-gradient-to-br from-gray-700 to-slate-800 text-white" id="skills">
       <div className="container-custom mx-auto  text-white">
         <h2 className="section-title text-center text-white ">My Skills</h2>
         <p className="text-center  max-w-2xl mx-auto mb-12">
@@ -54,7 +54,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
-              className="bg-gray-800 p-6 rounded-lg border border-t-0 border-l-0 shadow-lg shadow-gray-600 hover:shadow-md transition-shadow animate-fade-in"
+              className="bg-gray-800 p-6 rounded-lg border border-t-0 border-l-0 shadow-blue-500 shadow-[0px_0px_20px_1px] hover:shadow-md transition-shadow animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-4">{category.icon}</div>

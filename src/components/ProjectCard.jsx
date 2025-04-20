@@ -12,7 +12,7 @@ const ProjectCard = ({
   technologies
 }) => {
   return (
-    <div className="border border-t-0 border-l-0 rounded-lg  overflow-hidden bg-black shadow-md shadow-gray-400 card-hover">
+    <div className="border border-t-0 border-l-0 rounded-lg  overflow-hidden bg-black shadow-md  shadow-gray-400 card-hover">
       <div className="aspect-video overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
       </div>

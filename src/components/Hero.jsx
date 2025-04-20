@@ -1,11 +1,18 @@
 
 import React from 'react';
-import photo from '../../public/manashero.jpg'
-import bg from '../../public/bg.jpg'
+// import photo from '../../public/hero2.jpg'
+// import sample from '../../public/video3.mp4'
 import {Link} from 'react-router-dom'
 import { ChevronDown, Github, Linkedin, Twitter } from 'lucide-react';
 import { useState,useEffect } from 'react';
+
+import '.././index.css'
+
 const Hero = () => {
+
+
+
+  
   const TypewriterEffect = ({ text, speed }) => {
     const [displayedText, setDisplayedText] = useState('');
     const [index, setIndex] = useState(0);
@@ -27,25 +34,26 @@ const Hero = () => {
     return <span className="typewriter-text">{displayedText}</span>;
 };
   return (
-    <section className="min-h-screen flex flex-col justify-center pt-16 bg-[url(../../public/bg2.jpg)] bg-no-repeat  bg-cover" id="about">
-      <div className="container-custom mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="animate-fade-in">
-            <h1 className="text-[100px] md:text-[100px] font-bold text-white  mb-4">
-              Hi, I'm <span className="text-purple-600    "> 
-                <div>
+    <section className=" min-h-screen w-[100%] bg-gradient-to-tr from-slate-300 to-black  flex flex-col justify-center  pt-16 " id="about">
+     
+      <div className="  container-custom mx-auto">
+        <div className=" items-center flex flex-col  mx-auto ">
+          <div className="animate-fade-in relative text-center flex  flex-col mx-auto  justify-center  items-center ">
+            <h1 className="text-[40px] md:text-[40px] lg:text-[40px] flex flex-col text-white z-999  relative  mb-4">
+              Hi, I'm <span className="text-white text-[60px] md:text-[70px] lg:text-[70px]   "> 
+               
                 {/* <Typewriter text="Manashvi sahani" delay={100} /> */}
                 {/* <TypewriterEffect text="hello" speed={200} /> */}
-                <TypewriterEffect text="Manashvi" speed={100} /><br/>
-                <TypewriterEffect text="sahani" speed={100} />
-                </div></span>
+                <TypewriterEffect text="MANASHVI" speed={100} /><br/>
+                <TypewriterEffect text="SAHANI" speed={100} />
+               </span>
             </h1>
             {/* <h2 className="text-2xl md:text-3xl text-portfolio-gray font-medium mb-6">
               Full Stack Developer
             </h2> */} 
             
             
-            <div className="flex space-x-4 mb-8">
+            <div className="flex space-x-4 mb-8 relative ">
               <a 
                 href="https://github.com/Sahanimanas" 
                 target="_blank" 
@@ -72,44 +80,17 @@ const Hero = () => {
               </a>
 
             </div>
-            <div className="absolute w-[40px] h-[40px]  top-[-100px]  bg-gradient-to-br from-purple-100 to-portfolio-purple rounded-full animate-float"></div>
-            <div className="absolute  w-[40px] h-[40px] m-12 top-[-100px] bg-gradient-to-br from-purple-100 to-portfolio-purple rounded-full animate-float"></div>
-            {/* <div className="relative left-12 w-[40px] h-[40px]  m-8 bg-gradient-to-br from-purple-100 to-portfolio-purple rounded-full animate-float"></div> */}
-            {/* <div className=" w-[30px] h-[30px]  bg-gradient-to-br from-purple-100 to-portfolio-purple rounded-full animate-float"></div> */}
-
-            
-            {/* <div className="flex space-x-4">
-              <a href="#projects" className="btn-primary">View Projects</a>
-              <a href="#contact" className="border border-portfolio-purple text-portfolio-purple hover:bg-portfolio-purple hover:text-white font-medium py-2 px-4 rounded transition duration-300">
-                Contact Me
-              </a>
-            </div> */}
+           
           </div>
+        
           
-          <div className="hidden md:block relative">
-            <div className=" relative w-80 h-80 mx-auto bg-gradient-to-br from-purple-100 to-portfolio-purple rounded-full animate-float"></div>
-            <div className=" absolute left-0 top-0 w-[60px] h-[60px] mx-auto bg-gradient-to-br from-purple-100 to-portfolio-purple rounded-full animate-float">
-            <div className="absolute right-[-300px] top-[-50px] w-[50px] h-[50px] mx-auto bg-gradient-to-br from-purple-100 to-portfolio-purple rounded-full animate-float"></div>
-            </div>
-            
-            <div className="sticky w-[50px] h-[50px] m-[-33px] bg-gradient-to-br from-purple-100 to-portfolio-purple rounded-full animate-float"></div>
-            <div className="absolute right-0 w-40 h-40  m-8 bg-gradient-to-br from-black to-portfolio-purple rounded-full animate-float"></div>
-            
-            <div className="absolute inset-0 flex items-center justify-center">
-              <img 
-                src={photo}
-                alt="manashvi" 
-                className="w-64 h-64 object-cover rounded-full border-4 border-white shadow-lg"
-              />
-            </div>
-          </div>
         </div>
       </div>
       
       <div className="absolute bottom-10 left-0 w-full flex justify-center">
-        <Link to={'/project'} className="animate-bounce p-2">
-          <ChevronDown size={36} className="text-portfolio-purple" />
-        </Link>
+        <a href='#projects' className="animate-bounce p-2">
+          <ChevronDown size={36} className="text-white" />
+        </a>
       </div>
     </section>
   );
